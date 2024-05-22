@@ -41,6 +41,43 @@ We use two public datasets for training : ImageNet-LT and iWildCam.
 
 ## Code for Synthetic Data Generation
 
+### iWildCam
+
+1. Prepare for a data csv file including hard samples
+    - Template of the csv file is shown in file [sample.csv](data_generation/iWildCam/sample.csv)
+2. Use this csv to generate synthetic data with guidance scales & random seeds
+    ```shell
+    python3 data_generation/iWildCam/gene_img.py --part=1 --total_parts=1 --data_csv="${PATH_TO_CSV}" --output_path="${OUTPUT_FOLDER}"
+    ```
+3. Compute CLIPScore for filtering out poor-quality images.
+    ```shell
+    python3 data_generation/iWildCam/comp_clip_scores.py --syn_path="${OUTPUT_FOLDER}" --real_path="${PATH_TO_WILDS}"
+    ```
+    - Results 1 (clip_score.pkl): including the image-image similarity score and image-text similarity score
+    - Results 2 (filtered_results.pkl): including only the filtered image-image similarity score and image-text
+      similarity score
+
+### ImageNet-LT
+
+1. Prepare for a data csv file including hard samples
+    - Template of the csv file is shown in file [sample.csv](data_generation/ImageNet_LT/sample.csv)
+2. Use this csv to generate diversified text prompt for hard classes
+    ```shell
+    python3 data_generation/ImageNet_LT/get_text_prompt.py --data_csv="${PATH_TO_CSV}" --prompt_json="${PATH_TO_PROMPT}" 
+    ```
+3. Use this csv to generate synthetic data with guidance scales & random seeds
+    ```shell
+    python3 data_generation/ImageNet_LT/gene_img.py --part=1 --total_parts=1 --data_csv="${PATH_TO_CSV}" --output_path="${OUTPUT_FOLDER}" --prompt_json="${PATH_TO_PROMPT}" 
+    ```
+4. Compute CLIPScore for filtering out poor-quality images. This script will produce a clip_score.pkl including the
+   image-image similarity score and image-text similarity score
+    ```shell
+    python3 data_generation/ImageNet_LT/comp_clip_scores.py --syn_path="${OUTPUT_FOLDER}" --real_path="${PATH_TO_INLT}"
+    ```
+    - Results 1 (clip_score.pkl): including the image-image similarity score and image-text similarity score
+    - Results 2 (filtered_results.pkl): including only the filtered image-image similarity score and image-text
+      similarity score
+
 ## Code for Curriculum Learning
 
 ### For ImageNet-LT
