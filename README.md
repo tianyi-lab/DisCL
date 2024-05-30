@@ -83,3 +83,9 @@ We use two public datasets for training : ImageNet-LT and iWildCam.
 ### For ImageNet-LT
 
 ### For iWildCam
+
+- Run training scripts [run_training.sh](curriculum_training/iWildCam/myshells/run_training.sh)
+   ```shell
+   cd curriculum_training/iWildCam
+   bash myshells/run_training.sh
+   ```
