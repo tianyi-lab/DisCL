@@ -1,0 +1,1 @@
+from .pipeline_stable_diffusion_xl_img2img import StableDiffusionXLImg2ImgPipeline

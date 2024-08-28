@@ -3,7 +3,7 @@ import sys
 
 sys.path.append(os.getcwd())
 
-from model import StableDiffusionImg2ImgPipeline, StableDiffusionXLImg2ImgPipeline
+from data_generation.model import StableDiffusionXLImg2ImgPipeline
 import torch
 from PIL import Image
 import pickle

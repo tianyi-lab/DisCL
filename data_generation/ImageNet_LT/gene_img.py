@@ -2,8 +2,8 @@ import os
 import sys
 
 sys.path.append(os.getcwd())
+from data_generation.model import StableDiffusionXLImg2ImgPipeline
 
-from model import StableDiffusionImg2ImgPipeline, StableDiffusionXLImg2ImgPipeline
 from transformers import CLIPProcessor, CLIPModel, CLIPTokenizer
 from sklearn.metrics.pairwise import cosine_similarity
 import torch
