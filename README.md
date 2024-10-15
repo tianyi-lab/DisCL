@@ -1,4 +1,4 @@
-# DisCL
+# Diffusion Curriculum (DisCL)
 
 [Diffusion Curriculum: Synthetic-to-Real Data Curriculum via Image-Guided Diffusion]() (Will be released in Arxiv soon)
 
