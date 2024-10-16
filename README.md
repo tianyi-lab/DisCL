@@ -1,10 +1,6 @@
-# Diffusion Curriculum (DisCL)
+# Diffusion Curriculum (DisCL): Synthetic-to-Real Generative Curriculum Learning via Image-Guided Diffusion
 
-[Diffusion Curriculum: Synthetic-to-Real Data Curriculum via Image-Guided Diffusion]() (Will be released in Arxiv soon)
-
-CREDITS: Our code is heavily based
-on [FLYP](https://github.com/locuslab/FLYP), [LDMLR](https://github.com/AlvinHan123/LDMLR/tree/main),
-and [Open CLIP](https://github.com/mlfoundations/open_clip). We greatly thank the authors for open sourcing their code!
+arXiv
 
 ## Overview
 
@@ -94,3 +90,22 @@ We use two public datasets for training : ImageNet-LT and iWildCam.
    cd curriculum_training/iWildCam
    bash myshells/run_training.sh
    ```
+
+## Acknowledgement
+
+Our code is heavily based
+on [FLYP](https://github.com/locuslab/FLYP), [LDMLR](https://github.com/AlvinHan123/LDMLR/tree/main),
+and [Open CLIP](https://github.com/mlfoundations/open_clip). We greatly thank the authors for open-sourcing their code!
+
+## Citation
+
+Please consider citing our paper if you think our codes, data, or models are useful. Thank you! <br>
+
+```
+@inproceedings{liang-bhardwaj-zhou-2024-discl,
+    title = "Diffusion Curriculum: Synthetic-to-Real Generative Curriculum Learning via Image-Guided Diffusion",
+    author = "Liang, Yijun and Bhardwaj, Shweta and Zhou, Tianyi",
+    booktitle = "arXiv:2410.xxxxx",
+    year = "2024",
+}
+```
