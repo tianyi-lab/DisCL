@@ -1,4 +1,4 @@
-# Diffusion Curriculum (DisCL): Synthetic-to-Real Generative Curriculum Learning via Image-Guided Diffusion
+# Diffusion Curriculum (DisCL): Synthetic-to-Real Generative Curriculum Learning via Image-Guided Diffusion [ICCV 2025]
 
 [arXiv](https://arxiv.org/abs/2410.13674)
 
@@ -105,7 +105,7 @@ Please consider citing our paper if you think our codes, data, or models are use
 @inproceedings{liang-bhardwaj-zhou-2024-discl,
     title = "Diffusion Curriculum: Synthetic-to-Real Generative Curriculum Learning via Image-Guided Diffusion",
     author = "Liang, Yijun and Bhardwaj, Shweta and Zhou, Tianyi",
-    booktitle = "arXiv:2410.xxxxx",
-    year = "2024",
+    booktitle = "International Conference on Computer Vision (ICCV)",
+    year = "2025",
 }
 ```
