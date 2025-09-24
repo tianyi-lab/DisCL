@@ -1,6 +1,6 @@
 # Diffusion Curriculum (DisCL): Synthetic-to-Real Generative Curriculum Learning via Image-Guided Diffusion [ICCV 2025]
 
-[arXiv](https://arxiv.org/abs/2410.13674)
+[**📖 Paper**](https://arxiv.org/abs/2410.13674) | [**🪧 Project**](https://joliang17.github.io/DisCL/)
 
 ## Overview
 
