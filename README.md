@@ -1,4 +1,4 @@
-# Diffusion Curriculum (DisCL): Synthetic-to-Real Generative Curriculum Learning via Image-Guided Diffusion [ICCV 2025]
+# Diffusion Curriculum (DisCL): Synthetic-to-Real Data Curriculum via Image-Guided Diffusion [ICCV 2025]
 
 [**📖 Paper**](https://arxiv.org/abs/2410.13674) | [**🪧 Project**](https://joliang17.github.io/DisCL/)
 
@@ -108,7 +108,7 @@ We use two public datasets for training : ImageNet-LT and iWildCam.
 ### ImageNet-LT
 
 1. Prepare for a data csv file including hard samples
-    - Template of the csv file is shown in file [sample.csv](data_generation/ImageNet_LT/sample.csv)
+    - Template of the csv file is shown in file [sample.csv](data_generation/LT_Problem/sample.csv)
 2. Use this csv to generate diversified text prompt for hard classes
     ```shell
     python3 data_generation/ImageNet_LT/get_text_prompt.py --data_csv="${PATH_TO_CSV}" --prompt_json="${PATH_TO_PROMPT}" 
@@ -155,7 +155,7 @@ Please consider citing our paper if you think our codes, data, or models are use
 
 ```
 @inproceedings{liang-bhardwaj-zhou-2024-discl,
-    title = "Diffusion Curriculum: Synthetic-to-Real Generative Curriculum Learning via Image-Guided Diffusion",
+    title = "Diffusion Curriculum: Synthetic-to-Real Data Curriculum via Image-Guided Diffusion",
     author = "Liang, Yijun and Bhardwaj, Shweta and Zhou, Tianyi",
     booktitle = "International Conference on Computer Vision (ICCV)",
     year = "2025",
